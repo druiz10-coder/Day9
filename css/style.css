@@ -3,9 +3,21 @@
 	padding: 0;
 }
 body {
+    margin: o;
+    height: 100vh;
 	font-family: 'Verdana, Geneva, Tahoma, sans-serif;
 }
-
+cursor:hover {
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
+}
 .banner-text {
 	width: 100%;
 	position: absolute;
@@ -21,15 +33,18 @@ body {
 	text-transform: uppercase;
 	color: black;
 	font-size: 20px;
+    text-shadow: 2px 2px white;
 }
-.banner-text ul li:hover {
+/*.banner-text ul li:hover {
 	cursor: pointer;
-}
+}*/
 .banner-text h2 {
 	text-align: center;
-	color: #fff;
-	font-size: 50px;
+	color:gold;
+	font-size: 100px;
 	margin-top: 20%;
+    text-shadow: 2px 2px black;
+    /*cursor: pointer;*/
 }
 
 img {
